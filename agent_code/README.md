@@ -10,3 +10,5 @@ The code of
 
 are not developed by us, but are modified slightly to enable us to use them in
 this project.
+
+Note that we use agents from other teams for our comparative analysis only.
