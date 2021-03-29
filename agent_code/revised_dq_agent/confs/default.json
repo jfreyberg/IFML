@@ -1,0 +1,46 @@
+{
+    "agent":
+    {
+        "gamma": 0.95,
+        "burnin": 1000,
+        "epsilon": 1,
+        "learning_rate": 1e-5,
+        "batch_size": 32,
+        "eps_min": 0.1,
+        "eps_dec": 5e-7,
+        "replace": 1000,
+        "save_dir": "data",
+        "random_chance": 0.7,
+        "rotation_loss_factor": 0,
+        "priority_replay": false,
+        "memory_size": 5000,
+        "checkpoint": "default",
+        "load_model": false,
+        "debug_mode": false,
+        "not_load_eps": false,
+        "use_checkpoint": false,
+        "evaluate_model": false
+    },
+    "rewards":
+    {
+        "DEFAULT": -1,
+        "MOVED_LEFT": 1,
+        "MOVED_RIGHT": 1,
+        "MOVED_UP": 1,
+        "MOVED_DOWN":1,
+        "WAITED": -3,
+        "INVALID_ACTION": -5,
+        "BOMB_DROPPED": 5,
+        "BOMB_EXPLODED": -5,
+        "CRATE_DESTROYED": 10,
+        "COIN_FOUND": 10,
+        "COIN_COLLECTED": 40,
+        "KILLED_OPPONENT": -25,
+        "KILLED_SELF": -15,
+        "GOT_KILLED": 0,
+        "OPPONENT_ELIMINATED": 50,
+        "SURVIVED_ROUND": 10,
+        "ACTIVITY_BONUS": 0,
+        "LAZYINESS_PENALTY": 0
+    }
+}

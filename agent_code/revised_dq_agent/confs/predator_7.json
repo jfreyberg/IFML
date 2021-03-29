@@ -1,0 +1,63 @@
+{
+    "N": 3,
+    "agent":
+    {
+        "gamma": 0.95,
+        "burnin": 1000,
+        "epsilon": 1,
+        "learning_rate": 1e-5,
+        "batch_size": 32,
+        "eps_min": 0.05,
+        "eps_dec": 5e-7,
+        "replace": 1000,
+        "save_dir": "data",
+        "random_chance": 0.15,
+        "rotation_loss_factor": 0,
+        "priority_replay": false,
+        "memory_size": 5000,
+        "checkpoint": "predator_self_N3",
+        "load_model": false,
+        "debug_mode": false,
+        "not_load_eps": false,
+        "use_checkpoint": false,
+        "evaluate_model": false,
+        "network_arch": {
+          "layers_x1": [],
+          "layers_x2": [],
+          "layers_x": [
+            {"out": 2},
+            {"out": 3},
+            {"out": 2}
+          ],
+          "dropout": 0.15,
+          "layers_end": [
+            {"out": 1}
+          ]
+        }
+    },
+    "rewards":
+    {
+        "DEFAULT":                0,
+        "MOVED_LEFT":             1,
+        "MOVED_RIGHT":            1,
+        "MOVED_UP":               1,
+        "MOVED_DOWN":             1,
+        "WAITED":                -3,
+        "INVALID_ACTION":        -5,
+        "BOMB_DROPPED":           3,
+        "BOMB_EXPLODED":          0,
+        "CRATE_DESTROYED":       13,
+        "COIN_FOUND":            10,
+        "COIN_COLLECTED":        30,
+        "KILLED_OPPONENT":      150,
+        "KILLED_SELF":          -15,
+        "GOT_KILLED":           -20,
+        "OPPONENT_ELIMINATED":    0,
+        "SURVIVED_ROUND":         0,
+        "ACTIVITY_BONUS":         0,
+        "LAZYINESS_PENALTY":      0,
+        "ENEMY_CLOSE_BOMB":      18,
+        "ENEMY_VERY_CLOSE_BOMB": 24,
+        "ENEMY_CLOSE":            0
+    }
+}
