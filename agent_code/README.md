@@ -1,3 +1,5 @@
+Our **agent with trainings code is `revised_dq_agent`**, the `DBS` agent only contains the code necessary to use the agent (the used weights are those of predator_7).
+
 The code of
 * Lord Voldemort (https://github.com/DanHalperin/Bomberman_rl)
 * MR Bombastic (https://github.com/mlteam-ws2018/RL_boom)
